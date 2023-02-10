@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: app-center
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://appcenter:111111@123.58.217.55:27017/appcenter
+  redis:
+    # 地址
+    #    host: localhost
+    host: 123.58.217.55
+    # 端口，默认为6379
+    port: 6379
+
+server:
+  tomcat:
+    threads:
+      min-spare: 20
+      max: 100
+    connection-timeout: 1000
+  port: 8888
+
